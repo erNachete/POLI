@@ -1,0 +1,14 @@
+var puntos=0;
+var sumatorio=1;
+var tsumatorio=0;
+var porra=10;
+var perro=20;
+var comprasobjetos;
+var precio = [porra,perro];
+var nombres = ["porra","perro"];
+var contador = [0,0];
+var texto1,texto2;
+var historial=new Array();
+var contadoracciones=0, contadorhistorial;
+var textohistorial="";
+var accion;

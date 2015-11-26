@@ -1,0 +1,232 @@
+html, body{
+    height: calc(100% - 3px);
+	width:100%;
+	margin:0px;
+}
+
+div{
+	text-align:center;
+}
+
+p{
+	background-color:transparent;
+	line-height: 0%;
+}
+
+.cabeceras{
+	text-decoration: underline;
+	margin-bottom:10%;
+	margin-top:10%;
+}
+
+	/* la cabecera es el espacio superior a la caja de juego*/
+	#cabecera	{
+		height: 10%;
+		width: 100%;
+		background-color:gray;
+	}
+
+	/* izquierda hace referencia al espacio de la izquierda a la caja de juego */
+	#izquierda{
+		height:80%;
+		width:10%;
+		background-color:gray;
+		float:left;
+	}
+
+	/* contenido hace referencia a la caja de juego */
+	#contenido{
+		height: calc(80% - 4px);
+		width:calc(80% - 4px);
+		background: white;
+		border: 2px solid black;
+		float: left;
+	}
+		
+		/* acciones contiene diferentes eventos que alteran el juego ofreciendo ventaja al jugador*/
+		#acciones{
+			height: 80%;
+			width:calc(20% - 2px);
+			background-color:white;
+			border-right: 2px solid black;
+			float:left;
+		}
+		
+			.animales{
+				margin-bottom:1%;
+				width:80%;
+				display:none;
+				margin:10px auto;
+			}
+		
+		/* caja principal*/
+		#personaje{
+			height:80%;
+			width: 60%;
+			background-color:#98D9D6;
+			float:left;
+		}
+			
+			/* objetivos muestra al usuario que es lo proximo que tiene que hacer para pasar de nivel*/
+			#objetivos{
+				width: 100%;
+				background-color:transparent;
+				border-bottom:2px solid black;
+			}
+						
+			/* dejamos un espacio a la izquierda*/
+			#espacioI{
+				height: 90%;
+				width: 20%;
+				background-color:transparent;
+				float: left;
+			}
+			
+			/* dejamos un espacio en medio*/
+			#espacioM{
+				height: 90%;
+				width: 60%;
+				background-color:#98D9D6;
+				float: left;
+				text-align:center;
+			}
+			
+				/* pequeño espacio sobre el personaje*/
+				#espacio1M{
+					width:100%;
+					height:10%;
+					background-color:transparent;
+				}
+				
+				/* aqui ira situado el personaje */
+				#dibujo{
+					border:2px solid black;
+					height:50%;
+					background-image:url("../img/banco.jpg");
+					background-color:white;
+					background-repeat: no-repeat;
+					background-position: center; 
+				}
+					
+					@keyframes police{
+					  from{
+						background-position: 0px;
+					  }
+					  to{
+						background-position: 200%;
+					  }
+					}
+
+					#policia{
+					  width: 33%;
+					  height: 100%;
+					  background-image: url("../img/policia.png");
+					  background-repeat:no-repeat;
+					  animation: police 1s steps(2, end) infinite;
+					  margin-left:30%;
+					}
+					
+				
+				/* pequeño espacio debajo el personaje*/
+				#espacio2M{
+					width:100%;
+					height:5%;
+					background-color:transparent;
+				}
+				
+				/* aqui ira situado el puntuador */
+				#puntos{
+					border:2px solid black;
+					height:15%;
+					background-color:white;
+					text-align:center;
+					padding: 5%;
+					padding-top:0%;
+					padding-bottom:0%;
+					display: inline-block
+
+				}
+				
+					#cifraP{
+						font-size: 180%;
+						line-height: 15%;
+						text-align:center;
+					}
+					
+				#estadisticas{
+					border:2px solid black;
+					height:10%;
+					background-color:white;
+					text-align:center;
+				}
+				
+					#fuerza{
+						font-size: 120%;
+						line-height: 20%;
+						text-align:center;
+					}
+				
+				#espacio3M{
+					width:100%;
+					height:5%;
+					background-color:transparent;
+				}
+				
+			/* dejamos un espacio a la derecha*/
+			#espacioI{
+				height: 90%;
+				width: 20%;
+				background-color:transparent;
+				float: left;
+			}
+			
+		/* objetios contiene diferentes elementos que alteran el juego ofreciendo ventaja al jugador*/
+		#objetos{
+			height: 80%;
+			width:calc(20% - 2px);
+			background-color:white;
+			border-left: 2px solid black;
+			float:left;
+		}
+		
+			.armas{
+				margin-bottom:1%;
+				width:80%;
+				display:none;
+				margin:10px auto;
+			}
+				
+		/* objetios contiene diferentes elementos que alteran el juego ofreciendo ventaja al jugador*/
+		#historial{
+			height: calc(20% - 2px);
+			width: 100%;
+			background-color:white;
+			border-top: 2px solid black;
+			clear:both;
+		}
+		
+			#textohistorial{
+				font-size: 14px;
+				font-weight: normal;
+				resize: none;
+				overflow-y: scroll;
+				height:calc(100% - 6px);
+				width:calc(100% - 6px);
+				text-align:center;
+			}
+		
+	/* derecha hace referencia al espacio de la derecha a la caja de juego */
+	#derecha{
+		height:80%;
+		width:10%;
+		background-color:gray;
+		float:left;
+	}
+
+	/* la pie es el espacio inferior a la caja de juego*/
+	#pie{
+		height: 10%;
+		width: 100%;
+		background-color:gray;
+		clear:both;
+	}

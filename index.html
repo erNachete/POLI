@@ -1,0 +1,105 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <link rel="stylesheet" href="style/main.css" type="text/css" />
+		<script type="text/javascript" src="js/datos.js"></script>
+		<script type="text/javascript" src="js/animacion.js"></script>
+		<script type="text/javascript" src="js/clicar.js"></script>
+		<script type="text/javascript" src="js/historial.js"></script>
+		<script type="text/javascript" src="js/objetos.js"></script>
+		<script type="text/javascript" src="js/acciones.js"></script>
+		
+    </head>
+    <body>
+		<div id="cabecera">
+		</div>
+        <div id="izquierda">           
+        </div>
+		
+		<!-- El juego va dentro de contenido -->		
+		<div id="contenido">  
+		
+			<!-- acciones contiene diferentes eventos que alteran el juego ofreciendo ventaja al jugador-->			
+			<div id="acciones">
+				
+				<p class="cabeceras">Comprados</p>
+				<p id="comprasacciones"></p>
+				<p class="cabeceras">Nuevas</p>
+				<input id="perro" class="animales" type="button" value="PERRO" title="aumenta el click por segundo" onclick="Operro(this.id);"/>
+				<p class="cabeceras">Mejoras</p>
+				
+			</div>
+			
+			<!-- caja principal-->			
+			<div id="personaje">
+			
+				<!-- objetivos muestra al usuario que es lo proximo que tiene que hacer para pasar de nivel-->
+				<div id="objetivos">
+				
+					<p id="titulo1">Objetivos: alcanza 100.000 de experiencia</p>
+					
+				</div>
+				
+				<!-- dejamos un espacio a la izquierda-->
+				<div id="espacioI">
+				</div>
+				
+				<!-- dejamos un espacio en medio-->
+				<div id="espacioM">
+					
+					<!-- pequeño espacio superior-->
+					<div id="espacio1M">
+					</div>
+					
+					<!-- aqui ira situado el personaje-->
+					<div id="dibujo" >
+						<div id="policia" onclick="clicar();"></div>
+					</div>
+					
+					<!-- pequeño espacio medio-->
+					<div id="espacio2M">
+					</div>
+					
+					<!-- aqui ira situada la puntuacion-->
+					<div id="puntos">
+						<p id="cifraP">0</p>
+					</div>
+					
+					<div id="espacio3M">
+					</div>
+					
+					<div id="estadisticas">
+						<p id="fuerza">1 exp/clc || 0 exp/s</p>
+					</div>
+					
+				</div>
+				
+				<!-- dejamos un espacio a la derecha-->
+				<div id="espacioD">
+				</div>
+				
+			</div>
+			
+			<!-- objetios contiene diferentes elementos que alteran el juego ofreciendo ventaja al jugador-->			
+			<div id="objetos">
+				<p class="cabeceras">Comprados</p>
+				<p id="comprasobjetos"></p>
+				<p class="cabeceras">Nuevas</p>
+				<input id="porra" class="armas" type="button" value="PORRA" title="aumenta el valor del click" onclick="Oporra(this.id);"/>
+				<p class="cabeceras">Mejoras</p>
+			</div>
+			
+			<!-- historial contiene lo ultimo acontecido en el juego-->			
+			<div id="historial">
+				<textarea id="textohistorial" style="resize: none;"></textarea>
+			</div>
+			
+        </div>
+		
+		<div id="derecha">           
+        </div>
+		<div id="pie">
+		</div>
+    </body>
+</html>
