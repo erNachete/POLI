@@ -17,6 +17,9 @@
         GDPafk
     </author>
 
+	
+	<preference name="permissions" value="none" />
+	
 	<icon src="ldpi.png" platform="android" qualifier="ldpi" />
 	<icon src="mdpi.png" platform="android" qualifier="mdpi" />
 	<icon src="hdpi.png" platform="android" qualifier="hdpi" />
